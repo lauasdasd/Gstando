@@ -1,4 +1,4 @@
-# 💼 Sistema de Gestión de Préstamos – Empresa Terciarizada (Nuevo Banco del Chaco)
+# Sistema de Gestión de Préstamos – Empresa Terciarizada (Nuevo Banco del Chaco)
 
 Sistema web desarrollado para una **empresa de terceros** dedicada a la gestión de préstamos vinculados al **Nuevo Banco del Chaco**.  
 Permite administrar clientes, préstamos, cuotas y realizar validaciones mediante **APIs externas** para análisis crediticio.
@@ -9,7 +9,7 @@ Permite administrar clientes, préstamos, cuotas y realizar validaciones mediant
 
 ---
 
-## 🧾 Descripción del Proyecto
+## Descripción del Proyecto
 
 El sistema está diseñado para gestionar de forma integral el ciclo de vida de un préstamo, desde el alta del cliente hasta la finalización del crédito, incorporando controles externos para minimizar riesgos.
 
@@ -21,25 +21,25 @@ Permite:
 
 ---
 
-## ⚙️ Funcionalidades Principales
+## Funcionalidades Principales
 
-### 👤 Gestión de Clientes
+### Gestión de Clientes
 - Alta, baja y modificación de clientes
 - Registro de datos personales y financieros
 - Validación previa antes de otorgar préstamos
 
-### 💰 Gestión de Préstamos
+### Gestión de Préstamos
 - Registro de préstamos
 - Control de cuotas
 - Fechas de inicio y finalización
 - Seguimiento del estado del crédito
 
-### 🔎 Validaciones Externas (APIs)
+### Validaciones Externas (APIs)
 - Consulta a **APIs de riesgo crediticio** (ej. Veraz)
 - Integración con **DocuEst**
 - Validación automática antes de aprobar préstamos
 
-### 📊 Reportes y Análisis
+### Reportes y Análisis
 - Reportes por:
   - Líneas de crédito
   - Meses
@@ -49,7 +49,7 @@ Permite:
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 El sistema está desarrollado siguiendo el patrón **MVC (Model - View - Controller)**:
 
@@ -65,7 +65,7 @@ Esta arquitectura permite:
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Backend
 - **PHP**
@@ -86,7 +86,7 @@ Esta arquitectura permite:
 
 ---
 
-## 🔐 Configuración
+## Configuración
 
 Por razones de seguridad, **no se incluyen credenciales reales ni claves de APIs**.
 
@@ -100,7 +100,7 @@ Los archivos de configuración contienen **placeholders**.
 
 ---
 
-## 📌 Estado del Proyecto
+## Estado del Proyecto
 
 ✅ Proyecto finalizado  
 ✅ Funcional  
@@ -108,16 +108,8 @@ Los archivos de configuración contienen **placeholders**.
 
 ---
 
-## 🔧 Posibles Mejoras Futuras
 
-- Exportación de reportes (PDF / Excel)
-- Dashboard con gráficos financieros
-- Historial de consultas a APIs
-- Gestión de roles y permisos
-
----
-
-## 👨‍💻 Autor
+## Autor
 
 **Lautaro Varga**  
 Técnico Superior en Desarrollo de Software  
