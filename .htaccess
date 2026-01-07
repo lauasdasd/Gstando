@@ -1,0 +1,14 @@
+# Gstando/.htaccess
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Esta línea es la más importante. Debe coincidir con el nombre de tu carpeta.
+    # Si la URL es http://localhost/Gstando/, usa /Gstando/
+    RewriteBase /Gstando/
+    
+    RewriteRule ^$ public/ [L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]
+</IfModule>

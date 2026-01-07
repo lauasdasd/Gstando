@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gstando - Soluciones Financieras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0d47a1; /* Azul oscuro */
+            --secondary-color: #00796b; /* Verde-azulado */
+            --accent-color: #ff9800; /* Naranja para detalles, puedes ajustarlo */
+            --light-bg-color: #f5f5f5;
+            --dark-bg-color: #1a1a1a;
+        }
+.navbar {
+    /* Combinamos un degradado oscuro con la imagen de fondo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('../public/assets/img/Fondo.jpg');
+    background-size: cover;
+    /* Hacemos que la imagen se repita horizontalmente */
+    background-repeat: repeat-x; 
+    
+    /* Aseguramos que se mantenga en la posición correcta */
+    background-position: center center; 
+    
+    /* Mantenemos un color de respaldo */
+    background-color: #002244; 
+}
+    .nav-link{
+        color: white;
+    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg-color);
+        }
+        
+        .bg-custom-blue {
+            background-color: #1a1a1a; /* Puedes cambiar este si quieres que la barra de navegación no sea negra */
+        }
+        
+        /* Nuevos colores y estilos basados en el logo */
+        .bg-accent-main {
+            background-color: #0a4d5f; /* Un tono de azul-verde del logo */
+        }
+        
+        .text-accent-main {
+            color: #0a4d5f !important;
+        }
+        
+        .bg-accent-secondary {
+            background-color: #38b2ac; /* Un tono de turquesa del logo */
+        }
+
+        .text-accent-secondary {
+            color: #38b2ac !important;
+        }
+
+        .jumbotron {
+            /* Ruta de la imagen del header que me enviaste */
+            background: url('https://picsum.photos/1920/1080?random=1') no-repeat center center/cover; 
+            color: white;
+            padding: 8rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn.bg-accent-secondary {
+            background-color: #38b2ac;
+        }
+        
+        .btn.bg-accent-secondary:hover {
+            background-color: #2c8e89; /* Tono más oscuro al pasar el ratón */
+        }
+        
+        .team-member {
+            transition: transform 0.3s ease-in-out;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg  bg-custom-blue fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand" href="#inicio">
+            <img src='../public/assets/img/Gestando.png' alt="Gstando Logo" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="inicio"></div> 
+<div class="jumbotron text-center d-flex align-items-center">
+    <div class="container" data-aos="fade-up">
+        <h1 class="display-4 fw-bold">Tu futuro financiero comienza aquí</h1>
+        <p class="lead">Soluciones de préstamos personales rápidas, flexibles y sin complicaciones.</p>
+        <a href="#contacto" class="btn bg-accent-secondary btn-lg mt-3 shadow-lg text-white">Solicita tu préstamo hoy</a>
+    </div>
+</div>
+
+<section id="servicios" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Nuestros Servicios</h2>
+            <p class="text-muted">Ofrecemos una variedad de opciones para adaptarnos a tus necesidades.</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4" data-aos="fade-right">
+                <div class="card h-100 p-4 shadow-sm">
+                    <div class="card-body">
+                        <i class="fa-solid fa-money-check-dollar fa-3x text-accent-main mb-3"></i>
+                        <h5 class="card-title">Préstamos Personales</h5>
+                        <p class="card-text text-muted">Obtén el capital que necesitas para cualquier proyecto, desde viajes hasta renovaciones del hogar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card h-100 p-4 shadow-sm">
+                    <div class="card-body">
+                        <i class="fa-solid fa-handshake fa-3x text-accent-main mb-3"></i>
+                        <h5 class="card-title">Asesoramiento Financiero</h5>
+                        <p class="card-text text-muted">Te ayudamos a planificar tus finanzas y a elegir la mejor opción de crédito para ti.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-left">
+                <div class="card h-100 p-4 shadow-sm">
+                    <div class="card-body">
+                        <i class="fa-solid fa-hourglass-half fa-3x text-accent-main mb-3"></i>
+                        <h5 class="card-title">Proceso Rápido</h5>
+                        <p class="card-text text-muted">Nuestro proceso de solicitud y aprobación está diseñado para ser ágil y sin demoras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="equipo" class="py-5">
+    <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Conoce a Nuestro Equipo</h2>
+            <p class="text-muted">Profesionales dedicados a ayudarte en cada paso del camino.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card team-member shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="https://picsum.photos/600/600?random=2" class="img-fluid rounded-start h-100 object-fit-cover" alt="Miembro del equipo">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Laura Gómez</h5>
+                                <p class="text-muted mb-2">Gerente General</p>
+                                <p class="card-text small">Con más de 10 años de experiencia en el sector financiero, Laura se encarga de dirigir nuestras operaciones diarias. Su visión estratégica y dedicación aseguran que cada cliente reciba la mejor atención y las soluciones más adecuadas para sus necesidades financieras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card team-member shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="https://picsum.photos/600/600?random=3" class="img-fluid rounded-start h-100 object-fit-cover" alt="Miembro del equipo">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Carlos Ruiz</h5>
+                                <p class="text-muted mb-2">Asesor de Préstamos Senior</p>
+                                <p class="card-text small">Carlos es nuestro especialista en encontrar las mejores opciones de préstamo. Con un profundo conocimiento del mercado, te guiará paso a paso para que tomes una decisión informada y obtengas un plan de pago que se ajuste perfectamente a tu presupuesto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Preguntas Frecuentes</h2>
+            <p class="text-muted">Respuestas a las dudas más comunes.</p>
+        </div>
+        <div class="accordion" id="accordionFAQ">
+            <div class="accordion-item" data-aos="fade-up">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        ¿Qué documentos necesito para solicitar un préstamo?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Necesitas tu DNI, un comprobante de ingresos (recibo de sueldo, etc.) y un comprobante de domicilio a tu nombre.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿En cuánto tiempo obtengo una respuesta?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Nuestra evaluación es rápida. Generalmente, obtendrás una respuesta en 24 a 48 horas hábiles.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Puedo solicitar un préstamo si estoy en el Veraz?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Cada caso es evaluado de forma individual. Te invitamos a contactarnos para analizar tu situación y ver las opciones disponibles.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="py-5 bg-accent-main text-white">
+    <div class="container" data-aos="fade-up">
+        <h2 class="fw-bold text-center mb-4">¡Contáctanos!</h2>
+        <p class="lead text-center mb-4">Estamos aquí para ayudarte. Si tienes preguntas, no dudes en contactarnos.</p>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card bg-white text-dark shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-location-dot fa-2x text-accent-main mb-3"></i>
+                        <h5 class="card-title">Nuestra Oficina</h5>
+                        <p class="card-text">Calle Falsa 123, Ciudad, País</p>
+                        
+                        <hr class="w-50 mx-auto">
+                        <i class="fa-solid fa-phone fa-2x text-accent-main mb-3"></i>
+                        <h5 class="card-title">Teléfono</h5>
+                        <p class="card-text">+54 9 3732 123456</p>
+                        
+                        <hr class="w-50 mx-auto">
+                        <i class="fa-solid fa-envelope fa-2x text-accent-main mb-3"></i>
+                        <h5 class="card-title">Correo Electrónico</h5>
+                        <p class="card-text">info@gstando.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-white text-dark shadow-sm h-100">
+                    <div class="card-body p-0 d-flex align-items-center justify-content-center">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d455.0161773362737!2d-60.426659615918176!3d-26.78949605171141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1756059427557!5m2!1ses-419!2sar" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 450px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-custom-blue text-white text-center py-3">
+    <div class="container">
+        <p class="mb-0">© <?= date("Y"); ?> Gstando. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+</body>
+</html>

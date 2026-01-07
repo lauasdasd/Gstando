@@ -1,0 +1,24 @@
+# Dependencias
+/vendor/
+
+# Configuración sensible
+global.php
+.env
+.env.local
+
+# Archivos de sesión / cache
+*.log
+/tmp/
+/cache/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Imágenes de prueba / uploads
+/uploads/
+/imagenes/
